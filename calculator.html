@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LetsGrowMore-Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <form name="calc">
+        <input type="text" name="screen" readonly>
+        <hr>
+        <div class="buttons">
+            <button type="button" onclick="calc.screen.value +='('">(</button>
+            <button type="button" onclick="calc.screen.value +=')'">)</button>
+            <button type="button" onclick="calc.screen.value +=''"class="clear">C</button>
+            <button type="button" onclick="calc.screen.value = calc.screen.value.slice(0, -1)" class="clear">&larr;</button>
+            <button type="button" onclick="calc.screen.value +='8'"class="numbers">8</button>
+            <button type="button" onclick="calc.screen.value +='7'"class="numbers">7</button>
+            <button type="button" onclick="calc.screen.value +='9'"class="numbers">9</button>
+            <button type="button" onclick="calc.screen.value +='/'"class="">/</button>
+            <button type="button" onclick="calc.screen.value +='4'"class="numbers">4</button>
+            <button type="button" onclick="calc.screen.value +='5'"class="numbers">5</button>
+            <button type="button" onclick="calc.screen.value +='6'"class="numbers">6</button>
+            <button type="button" onclick="calc.screen.value +='*'"class="">*</button>
+            <button type="button" onclick="calc.screen.value +='1'"class="numbers">1</button>
+            <button type="button" onclick="calc.screen.value +='2'"class="numbers">2</button>
+            <button type="button" onclick="calc.screen.value +='3'"class="numbers">3</button>
+            <button type="button" onclick="calc.screen.value +='-'"class="numbers">-</button>
+            <button type="button" onclick="calc.screen.value +='0'"class="numbers">0</button>
+            <button type="button" onclick="calc.screen.value +=' '">.</button>
+            <button type="button" onclick="calc.screen.value =eval(calc.screen.value)" style="background-color: #23abff;">=</button>
+            <button type="button" onclick="calc.screen.value +='+'">+</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
